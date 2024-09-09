@@ -1,6 +1,17 @@
-import React from 'react'
-import './promoSlide.css'
+import React from 'react';
+import { useContext } from 'react';
+import { CarouselContext } from '../slider-context';
+
+import './promoSlide.css';
 
 export default function CarouselItem ({children}) {
-    return <div className='carouselItem__container'>{children}</div>
+    const { width } = useContext(CarouselContext)
+    return (
+        <div className='carouselItem__container' style={{
+            minWidth: `${width}px`,
+            maxWidth: `${width}px`
+        }}>
+            {children}
+        </div>
+    ) 
 }
