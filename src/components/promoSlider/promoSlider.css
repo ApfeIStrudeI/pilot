@@ -1,0 +1,40 @@
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item-1 {
+    background-color: cornflowerblue;
+}
+.item-2 {
+    background-color: coral;
+}
+.item-3 {
+    background-color: darkseagreen;
+}
+.item-4 {
+    background-color: rgb(180, 24, 24);
+}
+
+.carousel__container {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.carousel__window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel__allItemsContainer {
+    display: flex;
+    height: 100%;
+    transition: 0.5s all;
+}
+.carousel__arrow {
+    cursor: pointer;
+    margin: 10px;
+}
