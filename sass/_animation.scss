@@ -1,0 +1,117 @@
+@keyframes span-1 {
+    0% {
+        transform: translate(0);
+        z-index: 1;
+    }
+    30% {
+        transform: translate(346px, -192px);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+        height: 135px;
+        z-index: 0;
+    }
+    31% {
+        transform: translate(346px, -192px);
+        height: 135px;
+        z-index: 0;
+    }
+    70% {
+        transform: translate(464px, 506px);
+        height: 135px;
+        z-index: 0;
+    }
+    100% {
+        transform:translate(0);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+        z-index: 1;
+    }
+}
+@keyframes span-2 {
+    0% {
+        transform: translate(0);
+        z-index: 0;
+    }
+    30% {
+        transform: translate(118px, 698px);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+        height: 135px;
+        z-index: 0;
+    }
+    31% {
+        transform: translate(118px, 698px);
+        height: 135px;
+        z-index: 0;
+    }
+    70% {
+        transform: translate(-346px, 192px);
+        height: 490px;
+        z-index: 1;
+    }
+    100% {
+        transform:translate(0);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+        z-index: 1;
+    }
+}
+@keyframes span-3 {
+    0% {
+        transform: translate(0);
+    }
+    30% {
+        transform: translate(-464px, -506px);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+        height: 490px;
+    }
+    31% {
+        transform: translate(-464px, -506px);
+        height: 490px;
+    }
+    70% {
+        height: 135px;
+        transform: translate(-118px, -698px);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+    }
+    71% {
+        height: 135px;
+        transform: translate(-118px, -698px);
+    }
+    100% {
+        transform:translate(0);
+        animation-timing-function: cubic-bezier(0.42,0,1,1);
+    }
+}
+.loader {
+    margin-right: 50px;
+    width: 576px;
+    height: 842px;
+    position: relative;
+}
+.loader img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+.loader img:nth-child(1) {
+    height: 490px;
+    top: 192px;
+    animation: span-1 5s infinite;
+}
+.loader img:nth-child(2) {
+    height: 135px;
+    left: 346px;
+    animation: span-2 5s infinite;
+}
+.loader img:nth-child(3) {
+    height: 135px;
+    top: 698px;
+    left: 464px;
+    animation: span-3 5s infinite;
+}
+.loader-box {
+    position: absolute;
+    float: right;
+    top: 280px;
+}
+.imageL {
+    box-shadow: 0 0 10px 0 #ffffffc7
+}
